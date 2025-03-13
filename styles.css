@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root {
-    --main-color: #c8a27a;        /* Warmer coffee tone */
-    --secondary-color: #8b5a2b;   /* Darker coffee tone */
-    --accent-color: #f8c471;      /* Soft yellow accent */
+    --main-color: #c8a27a;        
+    --secondary-color: #8b5a2b;   
+    --accent-color: #f8c471;      
     --black: #13131a;
-    --bg: #4a3427;                /* Darker, richer brown */
-    --light-bg: #6b4f3d;          /* Lighter brown for contrast */
+    --bg: #4a3427;                
+    --light-bg: #6b4f3d;          
     --text: #fff;
     --text-light: #eee;
     --text-dark: #222;
@@ -58,7 +58,7 @@ section {
     padding: 2rem 7%;
 }
 
-/* ========== HEADER SECTION ========== */
+
 .header {
     background: rgba(74, 52, 39, 0.9);
     backdrop-filter: blur(8px);
@@ -276,7 +276,7 @@ section {
     margin-bottom: 2rem;
 }
 
-/* ========== BUTTONS ========== */
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -321,7 +321,7 @@ section {
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-/* ========== HOME SECTION ========== */
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -420,7 +420,6 @@ section {
     }
 }
 
-/* ========== HEADINGS ========== */
 .heading {
     text-align: center;
     color: var(--text);
@@ -447,7 +446,6 @@ section {
     position: relative;
 }
 
-/* ========== ABOUT SECTION ========== */
 .about .row {
     display: flex;
     align-items: center;
@@ -502,7 +500,6 @@ section {
     line-height: 1.8;
 }
 
-/* ========== MENU SECTION ========== */
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -585,7 +582,7 @@ section {
     background: var(--secondary-color);
 }
 
-/* ========== PRODUCTS SECTION ========== */
+
 .products .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -695,7 +692,7 @@ section {
     margin-left: 1rem;
 }
 
-/* ========== REVIEW SECTION ========== */
+
 .review .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -768,7 +765,7 @@ section {
     color: var(--main-color);
 }
 
-/* ========== CONTACT SECTION ========== */
+
 .contact .row {
     display: flex;
     background: var(--black);
@@ -844,7 +841,7 @@ section {
     display: inline-block;
 }
 
-/* ========== BLOGS SECTION ========== */
+
 .blogs .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -937,7 +934,7 @@ section {
     margin-top: 1rem;
 }
 
-/* ========== FOOTER SECTION ========== */
+
 .footer {
     background: var(--black);
     text-align: center;
@@ -1007,7 +1004,7 @@ section {
     color: var(--main-color);
 }
 
-/* ========== ANIMATIONS ========== */
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -1023,12 +1020,12 @@ section {
     animation: fade-in 1s ease;
 }
 
-/* ========== UTILITY CLASSES ========== */
+
 .hidden {
     display: none;
 }
 
-/* ========== NOTIFICATION ========== */
+
 .notification {
     position: fixed;
     bottom: 20px;
@@ -1049,7 +1046,7 @@ section {
     opacity: 1;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -1565,8 +1562,7 @@ section {
       background: var(--main-color);
       opacity: 0.5;
   }
-  
-  /* Dark mode optimization for OLED screens */
+
   @media (prefers-color-scheme: dark) {
       :root {
           --bg: #362518;
@@ -1579,7 +1575,6 @@ section {
   }
 }
 
-/* Add glass morphism effects for modern browsers */
 @supports (backdrop-filter: blur(10px)) {
   .header {
       background: rgba(74, 52, 39, 0.8);
@@ -1602,7 +1597,7 @@ section {
   }
 }
 
-/* Animation for smoother transitions */
+
 @media (prefers-reduced-motion: no-preference) {
   .menu .box-container .box,
   .products .box-container .box,
@@ -1630,7 +1625,6 @@ section {
   }
 }
 
-/* Add touch-friendly improvements for mobile */
 @media (hover: none) {
   .btn:active {
       transform: scale(0.95);
